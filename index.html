@@ -184,7 +184,7 @@ async function bootSequence() {
   await new Promise(r => setTimeout(r, 900));
 
   await typeLine('> Quantum core alignment.................. COMPLETE');
-  await typeLine('> Neural proxy tunnel initialization....... ESTABLISHED');
+  await typeLine('> Neural pr0乂y tunnel initialization....... ESTABLISHED');
   await typeLine('> Reality bypass layer.................... ACTIVE');
   await typeLine('> Visual renderer sync.................... 60.0 TFLOPS');
   print('');
@@ -199,7 +199,7 @@ async function bootSequence() {
   `;
   print(logo);
 
-  await typeLine('HUNA proxy core online (Ultraviolet powered). Awaiting input.', 20);
+  await typeLine('HUNA pr0乂y core online (Ultraviolet powered). Awaiting input.', 20);
   print('Enter destination (e.g. youtube.com) or type "help"');
   print('');
 
@@ -271,7 +271,7 @@ input.addEventListener('keydown', async e => {
         print(`> Tunnel opened to ${url}  (ESC to return)`);
       } catch (err) {
         print(`> ERROR: Tunnel failed – ${err.message}`, 'error');
-        console.error('Proxy error:', err);
+        console.error('pr0乂y error:', err);
       }
     }
   }
@@ -288,11 +288,11 @@ if ('serviceWorker' in navigator) {
   navigator.serviceWorker.register('./sw.js', { scope: '/' })
     .then(reg => {
       console.log('Ultraviolet SW registered');
-      print('> Proxy layer initialized');
+      print('> pr0乂y layer initialized');
     })
     .catch(err => {
       console.error('SW registration failed:', err);
-      print('> Warning: Proxy layer failed to start – check console', 'error');
+      print('> Warning: pr0乂y layer failed to start – check console', 'error');
     });
 }
 </script>
