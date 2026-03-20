@@ -285,7 +285,7 @@ bootSequence();
 
 // Service Worker registration
 if ('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('./sw.js', { scope: '/' })
+  navigator.serviceWorker.register('/uv/sw.js', { scope: '/' })
     .then(reg => {
       console.log('Ultraviolet SW registered');
       print('> pr0乂y layer initialized');
