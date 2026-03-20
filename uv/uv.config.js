@@ -1,13 +1,13 @@
 /*global Ultraviolet*/ 
 self.__uv$config = { 
-  prefix: '/service/',               // or '/uv/service/' — keep whatever your template uses
-  bare: 'https://bare.bare.run/',    // ← CHANGE TO ONE OF THESE REMOTE ONES
-  // bare: 'https://uv.bare.run/',   // alternative
-  // bare: 'https://tomp.app/',      // another common public one (check if alive)
-  // bare: 'https://bare1.meticulous.ai/',  // try if others are down
+  prefix: '/service/',  // Keep this or change to '/uv/service/' if your template uses a different path
+  bare: 'https://bare.bare.run/',  // Try this first – commonly used and often reliable
+  // bare: 'https://uv.bare.run/',     // Alternative public one
+  // bare: 'https://tomp.app/',        // Another option if the above are slow/down
+  // bare: 'https://bare1.meticulous.ai/',  // Backup if needed
   encodeUrl: Ultraviolet.codec.xor.encode, 
   decodeUrl: Ultraviolet.codec.xor.decode, 
-  handler: '/uv/uv.handler.js',      // adjust paths if your uv/ folder is different
+  handler: '/uv/uv.handler.js',   // Adjust if your paths differ (e.g., '/uv.handler.js')
   client: '/uv/uv.client.js',
   bundle: '/uv/uv.bundle.js',
   config: '/uv/uv.config.js',
